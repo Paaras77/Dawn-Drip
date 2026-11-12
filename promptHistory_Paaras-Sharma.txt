@@ -1,0 +1,139 @@
+DUSK & DRIP: PROMPTS
+
+================================================================================
+STEP 1: SET UP THE PAGE
+================================================================================
+"Make a Dusk & Drip coffee shop website. Start with index.html in the public folder. The 
+ tagline is 'Brewed from dusk 'til dawn.' Use clean, accessible HTML, and link Playfair 
+ Display and DM Sans from Google Fonts, plus style.css and script.js"
+
+================================================================================
+STEP 2: BUILD ALL THE SECTIONS
+================================================================================
+"Put a sticky navbar at the top with the shop name on the left. On the right, add links to 
+ Home, Menu and Contact, a hamburger button for mobile and a cart button with a little count 
+ badge.
+
+- Hero: full height, with a space for the sky and moon, the headline 'Brewed from dusk 
+  'til dawn.', the line 'Your haven for midnight roasts and sunrise brews.' and 
+   a View Menu button.
+- Menu: a title, filter chips (All, Hot Drinks, Cold Drinks, Snacks), a search box and 12 
+  cards. Each card has a photo, a name, a one-line description, a price and an Add to Order 
+  button.
+- Contact: 404 Twilight Way, Nightfall Quarter, open 6 PM to 6 AM, a tappable phone number 
+  and email, and a spot for an open/closed sign.
+- Footer: the shop name, the tagline and a copyright with the current year."
+
+The 12 items:
+  Hot Drinks: Dusk Espresso $3.25, Owl's Latte $4.75, Copper Cortado $4.25, Velvet Mocha $5.00
+  Cold Drinks: Slow Drip Cold Brew $4.95, Nitro Nightfall $5.50, Iced Amber Latte $5.25, 
+  Salted Caramel Frappe $5.95
+  Snacks: Almond Dawn Croissant $3.95, Dark Side Brownie $3.50, Cinnamon Dusk Roll $4.25, 
+  Avocado Sunrise Toast $7.50
+
+"Give each one a short, sensory, slightly witty description."
+
+================================================================================
+STEP 3: ADD THE POP-UPS
+================================================================================
+"Add a cart that slides in from the right, with the items, a subtotal, a Place order 
+ button and a close button. Add a small toast message that pops up when something is added, 
+ and a back-to-top button."
+
+================================================================================
+STEP 4: STYLE IT
+================================================================================
+"Make it look like a cozy coffee bar after dark.
+
+- Colours: dark espresso browns, warm cream text, copper buttons and amber highlights.
+- Fonts and shape: Playfair Display for headings, DM Sans for body text, with rounded 
+  corners.
+- Navbar: a blurred, see-through navbar stuck to the top.
+- Buttons and cards: pill buttons that lift when you hover. Menu cards with a photo that 
+  zooms slightly and a soft amber glow on hover.
+- Mobile menu: under 900px, collapse the links into a hamburger menu.
+- Layout: 1 menu column on phones, 2 on tablets, 3 on laptops and 4 on big screens, with no 
+  sideways scrolling at any size."
+
+================================================================================
+STEP 5: MAKE THE MENU WORK
+================================================================================
+"Make the filter chips and the search box work together, with a gentle fade when cards 
+ change. If nothing matches, show 'Nothing by that name. Try 'latte' or 'brownie'?' and a 
+ Clear search button that resets everything."
+
+================================================================================
+STEP 6: MAKE THE CART WORK
+================================================================================
+Add to Order should add the item, or add one more if it's already there, then update the 
+ badge and show a toast saying 'Added [item] to your order.' In the cart, show each item with 
+ minus, plus and remove buttons, and a live total. Save the cart so it survives a refresh, 
+ even if storage is blocked. Place order should clear the cart and say 'Order in. 
+ Your cup is dripping its way to you.', then close after a couple of seconds. Opening and 
+ closing should work with the cart button, the close button, clicking outside and the Escape 
+ key.
+
+================================================================================
+STEP 7: MOBILE MENU AND SCROLLING
+================================================================================
+The hamburger should open and close the mobile menu, stop the page scrolling behind it and 
+close when you tap a link. Highlight the current section in the navbar as you scroll.
+
+================================================================================
+STEP 8: BRING IN THE DUSK-TO-DAWN MAGIC
+================================================================================
+Give the hero twinkling stars and a glowing crescent moon that drifts a little with the 
+mouse.
+
+Change the sky colours by time of day: dawn is copper and rose, daytime is muted amber, 
+dusk is amber and violet, and night is deep navy-espresso.
+
+Change the greeting too:
+- Night: 'Still up? The kettle is on.'
+- Morning: 'Dawn already? Welcome, early bird.'
+- Afternoon: 'Afternoon pick-me-up?'
+- Dusk: 'Golden hour is coffee hour.'
+
+Make the open sign use a moon: full moon when open, crescent when closing soon, new moon 
+when closed.
+
+When someone adds an item, drip an amber droplet toward the cart and pulse the badge once. 
+Fade sections in as you scroll, and add the amber glow on hover.
+
+If a visitor has reduced motion turned on, switch off the animations and parallax.
+
+================================================================================
+STEP 9: FINAL POLISH
+================================================================================
+Check the whole site
+
+- Focus: keyboard focus should always be visible, in amber.
+- Labels: icon-only buttons need labels.
+- Cart focus: the cart should trap focus while open and give it back when closed.
+- Colours: text should have enough contrast.
+- Back to top: show the button only after scrolling 600px.
+- Footer year: set it automatically.
+- Page title and description: add a title and description for the page.
+- Mobile: check 360, 768, 1024 and 1440px, with no sideways scroll, touch targets of at least 
+  44px and no text under 16px.
+
+================================================================================
+STEP 10:LAST MISSING FINAL PAYMENT
+================================================================================
+When I add items to the cart and click "Place order", nothing real happens. It just clears 
+the cart. Please add a proper checkout pop-up on the page itself.
+
+When someone clicks "Place order", close the cart drawer and open a checkout pop-up in the 
+middle of the screen. It should have three parts:
+
+1. Order summary: list the items they picked, with the name, quantity and price for each one. 
+Underneath, show the subtotal, 5% tax and the total. Add a small "Edit order" link that goes 
+back to the cart.
+
+2. Your details: ask for full name, email and phone number. Add a simple choice between 
+"Pickup" and "Dine in".
+
+3. Payment method: let them pick one of these with radio buttons: "Card", "Pay at the counter"
+ and "Digital wallet". If they pick Card, show card number, name on card, expiry date and CVV. 
+ Space the card number out as they type, and format the expiry as MM/YY. For the other two options, 
+ hide the card fields and show a short friendly note instead.
